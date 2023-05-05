@@ -1,0 +1,196 @@
+/* CSS Reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* CSS variable */
+:root{
+    --navbar-height:50px;
+}
+/* navigation bar */
+#navbar{
+    position: sticky;
+    display: flex;
+    align-items: center;
+    /* background-color: gray; */
+    height: 50px;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+    opacity: 0.7;
+    top: 0px;
+    left: 0px;
+}
+#navbar ul li{
+    color: white;
+    list-style: none;
+    font-size: 1.2rem;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+#logo{
+    margin: 10px 25px;
+}
+#logo img{
+    height: 50px;
+    margin: 10px 10px;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+   align-items: center;
+   height: 380px;
+}
+#home::before{
+    content: "";
+    background: url('../bg2.jpg') no-repeat center center/cover; /* ../ for css folder*/
+    position: absolute;
+    height: 70%;
+    width: 100%;
+    z-index: -2;
+    opacity: 0.5;
+    top: 0px;
+    left: 0px;
+}
+#home h1{
+    color: white;
+    text-align: center;
+}
+/* urrility classes */
+.h-primary{
+    padding: 15px;
+    font-size: 2rem ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.h-secondary{
+    padding: 15px;
+    font-size: 1.5rem ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.2rem ;
+}
+.btn{
+    padding: 2px 6px;
+    border: 2px solid rgb(255, 255, 255);
+    color: white ;
+    background-color: brown;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 15px;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+.btn:hover{
+    color: white;
+    background-color: green;
+}
+.center{
+    text-align: center;
+}
+/* services section */
+#services{
+    display: flex;
+    margin: 30px;
+}
+#services .box{
+    border: 2px solid red;
+    padding: 30px;
+    margin: 2px 4px;
+    border-radius: 15px;
+    background-color: rgb(236, 235, 235);
+}
+#services .box img{
+    height: 150px;
+    margin: auto;
+    display: block;
+}
+#services .box p{
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+#client-section::before{
+    content:"";
+    position: absolute;
+    background: url('../bg1.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+#client-section{
+    /* height: 300px; */
+    position: relative;
+}
+#clients img {
+  height:100px;
+}
+.client-item{
+    padding: 34px;
+}
+/* contact us */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    background: url('../cous.jpg')no-repeat center center/cover;
+}
+footer{
+    background: black;
+    color:white ;
+    padding: 9px 20px;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+   font-size: 1.3rem;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+ #contact-box input,#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 1.1rem;
+ }
+
